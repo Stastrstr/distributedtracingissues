@@ -1,0 +1,8 @@
+1. Can't add custom dimensions using AddTags for activity tracing. How it is possbile to do? 
+- the problem if API consumer has a batch request which intiate jobs with the same operationId 
+that means it is not possible to distinguish activity functions inside one batch.
+
+2. Exceptions are duplicated 
+3. Distributed tracing entries don't address ITelemetryInitializer (Can't set custom role name)
+4. Orchestration exceptions (during orchestration thread execution) don't set custom role name
+5. Legacy Orchestration logs are pushed.
